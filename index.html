@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word-Count</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Kaushan+Script&family=Orbitron&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <label>
+      <h1> Writting Pad</h1>
+    </label>
+    <h3 class="settime">Set time
+      <input type="text" placeholder="Min" id="MM">
+      <input type="text" placeholder="Sec" id="SS">
+      <button id="reset" onclick="resetTimer()">
+        <h4>Reset</h4>
+      </button>
+      <button id="start" onclick="startTimer()">
+        <h4>Start</h4>
+      </button>
+    </h3>
+    <div class="timer">
+      <h3 class="t">Timer</h3>
+      <h3 id="timer">00:00</h3>
+      <button id="submit" onclick="countWords()">
+        <h4 class="sub">Submit</h4>
+      </button>
+      <h3 id="count">- - -</h3>
+    </div>
+    <div id="innerContainer">
+      <textarea name="" id="textarae" cols="30" rows="10" placeholder="Type your creativity..!"></textarea>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
